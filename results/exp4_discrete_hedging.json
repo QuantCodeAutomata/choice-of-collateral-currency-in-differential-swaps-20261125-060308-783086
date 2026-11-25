@@ -2,7 +2,7 @@
   "experiment": "exp_4_discrete_futures_hedging",
   "n_paths": 10000,
   "n_paths_paper": 10000,
-  "full_configuration": false,
+  "full_configuration": true,
   "seed": 20261125,
   "table4_hedge_comparison": [
     {
