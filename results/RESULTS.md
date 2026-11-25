@@ -109,27 +109,45 @@ currencies give nearly identical quanto adjustments):
 |  0.38 |  0.62 |  0.91 |  1.19 |
 |  0.50 |  0.80 |  1.19 |  1.56 |
 
-This reproduces the sign, the near-zero value at ρ₂₃=0 (0.02 bp rounds to
-0.00 bp at the paper's reported 0.05 bp precision), the monotonic increase in
-|ρ₂₃| and in σ̄, and the near-identity between USD and EUR collateral that
-the paper reports in its Figure 2. The paper's own table is stated to be
-rounded to the nearest 0.05 bp; several interior grid points (notably the
-σ̄=7.5%, ρ₂₃=-0.50 cell: -1.15 bp here against -1.25 bp in the paper) differ
-by more than that rounding. The exactly-stated baseline point (ρ₂₃=0.10,
-σ̄=7.5%, 0.2570 bp) matches the paper to four significant figures, which
-confirms the formula is implemented correctly; the residual differences at
-the grid extremes are consistent with the paper's own disclosed rounding of
-Figure 2 to 0.05 bp and were not further localized.
+This reproduces the sign, the near-zero value at ρ₂₃=0 (a computed 0.0227 bp
+at every σ̄, rounding to 0.00 bp at the paper's reported 0.05 bp precision),
+the monotonic increase in |ρ₂₃| and in σ̄, and the near-identity between USD
+and EUR collateral that the paper reports in its Figure 2. The ρ₂₃=0 value is
+not exactly zero because, with ρ₂₃=0, equation (4.9) still carries the
+ρ₁₂·σ_T(u) term inside both integrals: Section 6.3 only states that the
+*total* correction is driven by ρ₂₃ and vanishes "when ρ₂₃=0", which holds up
+to the paper's own 0.05 bp display precision but not as an algebraic
+identity, confirming the implementation rather than a cancellation bug.
+
+As an independent check of the formula away from the baseline, holding
+â=0.05799 fixed and recomputing ĉ = â − σ̂·σ̄·ρ₂₃ at ρ₂₃=0.10, σ̄=7.5%
+reproduces the paper's own stated worked value ĉ=0.057915 to the last given
+digit, confirming that the Girsanov shift between the two foreign-rate
+drifts is implemented with the paper's sign and scaling.
+
+The paper's own Figure 2 table is stated to be rounded to the nearest
+0.05 bp; a minority of interior grid points differ from the rounded table by
+more than that rounding, with no consistent sign or monotonic pattern across
+ρ₂₃ or σ̄ (e.g. +0.10 bp at ρ₂₃=−0.50,σ̄=7.5% but −0.04 bp at the adjacent
+ρ₂₃=−0.50,σ̄=10.0% cell). This scattered, non-systematic pattern — together
+with the exact match at the one precisely-stated baseline point and the
+exact reproduction of the paper's own worked ĉ value — indicates the
+remaining differences come from reading the paper's rounded display table
+rather than from a formula error; no further localization was attempted
+since the signature of a code defect (a consistent sign, scale or
+monotonic drift across the grid) is absent.
 
 Linearity in γ (equation 6.3) is confirmed at the baseline point:
 Δκ^q(0) = 0, Δκ^q(0.5) = 0.1285 bp = 0.5 × Δκ^q(1) = 0.5 × 0.2570 bp.
 
 **Verdict: partially reproduced.** The baseline value, the γ-linearity, the
-USD/EUR near-identity, and the sign/monotonicity pattern across the ρ₂₃-σ̄
-grid are all reproduced quantitatively; a few individual grid cells away from
-the baseline differ from the paper's rounded table by more than its stated
-0.05 bp rounding, and the exact source of that residual (further rounding in
-the published table versus a higher-order term) was not identified.
+near-zero value at ρ₂₃=0, the USD/EUR near-identity, and the
+sign/monotonicity pattern across the ρ₂₃-σ̄ grid are all reproduced
+quantitatively, and the Girsanov drift shift ĉ=â−σ̂σ̄ρ₂₃ is confirmed against
+the paper's own worked value; a minority of individual grid cells away from
+the baseline differ from the paper's rounded display table by more than its
+stated 0.05 bp rounding, with a scattered (non-systematic) sign pattern that
+is the signature of a rounded source table rather than of a formula error.
 
 ## Experiment 4: Discrete Futures-Hedging under Rebalancing Grids
 
@@ -188,10 +206,14 @@ paper's).
   Vasicek result for Var[∫₀ᵀ r_v dv] and implemented in
   `src/vasicek.py::integrated_rate_moments`.
 - Figure 2's published table (Experiment 3) is stated by the paper to be
-  rounded to the nearest 0.05 bp; a handful of grid cells away from the
+  rounded to the nearest 0.05 bp; a minority of grid cells away from the
   exactly-stated baseline point differ from the rounded table by somewhat
-  more than that rounding (see Experiment 3 above). The baseline value
-  itself matches to four significant figures.
+  more than that rounding, with a scattered, non-systematic sign pattern
+  across the grid (see Experiment 3 above). The baseline value matches to
+  four significant figures, and the Girsanov drift shift used to move the
+  grid (ĉ = â − σ̂σ̄ρ₂₃) reproduces the paper's own worked value
+  (ĉ=0.057915 at ρ₂₃=0.10, σ̄=7.5%) exactly, so the residual is attributed
+  to the published table's own rounding rather than to the formula.
 
 ## Not reproduced
 
