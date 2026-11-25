@@ -195,5 +195,8 @@ paper's).
 
 ## Not reproduced
 
-There is nothing to report: all four selected experiments were run in full
-and their results are presented above.
+There is nothing to report: all four numerical experiments reproduced here
+(Monte Carlo validation of Propositions 4.1/4.2, the collateral-currency
+carry adjustment of Section 6.2, the contractual quanto adjustment of
+Section 6.3, and the discrete futures-hedging simulation of Section 6.4)
+were run in full, and their results are presented above.
