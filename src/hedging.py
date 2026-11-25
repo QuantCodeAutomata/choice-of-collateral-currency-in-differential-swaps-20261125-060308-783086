@@ -16,7 +16,7 @@ hedge ratios of equations (5.12) and (5.14); the reduced wealth equation
 (5.15) is integrated on the same grid, with the realised SOFR/€STR averages
 accrued by left-end Riemann sums and the foreign-futures gain translated to
 domestic currency by the right-end FX rule Q_{t_{k+1}}*DeltaF^f_{t_{k+1}}
-(Section 2.3, consistent with the implementation notes of Section 6.4).
+(Section 2.3, consistent with the discrete grid used in Section 6.4).
 """
 from __future__ import annotations
 

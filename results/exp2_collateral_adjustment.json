@@ -1,0 +1,144 @@
+{
+  "experiment": "exp_2_collateral_currency_value_adjustment",
+  "notional_usd": 100000000.0,
+  "table3_par_margin_change_and_csa_switch": [
+    {
+      "gamma": 0.0,
+      "maturity": 5.0,
+      "kappa_star_usd_bp": 370.3152133327485,
+      "kappa_star_eur_bp": 370.3152484076009,
+      "par_margin_change_bp": 3.507485239750974e-05,
+      "offmarket_bp": 100.0,
+      "csa_switch_value_usd": 24128.711640236666
+    },
+    {
+      "gamma": 0.0,
+      "maturity": 10.0,
+      "kappa_star_usd_bp": 370.31122549623893,
+      "kappa_star_eur_bp": 370.31126647776097,
+      "par_margin_change_bp": 4.098152199538685e-05,
+      "offmarket_bp": 100.0,
+      "csa_switch_value_usd": 81502.75717214716
+    },
+    {
+      "gamma": 1.0,
+      "maturity": 5.0,
+      "kappa_star_usd_bp": 176.3093306253306,
+      "kappa_star_eur_bp": 176.3092883887468,
+      "par_margin_change_bp": -4.223658377905393e-05,
+      "offmarket_bp": 100.0,
+      "csa_switch_value_usd": 24125.23089595914
+    },
+    {
+      "gamma": 1.0,
+      "maturity": 10.0,
+      "kappa_star_usd_bp": 176.3140050349177,
+      "kappa_star_eur_bp": 176.31395638209258,
+      "par_margin_change_bp": -4.865282513671909e-05,
+      "offmarket_bp": 100.0,
+      "csa_switch_value_usd": 81495.39591287696
+    }
+  ],
+  "figure1_offmarket_sweep": [
+    {
+      "maturity": 1.0,
+      "offmarket_bp": -200.0,
+      "adjustment_usd_100m_notional": -2907.4891409342636
+    },
+    {
+      "maturity": 1.0,
+      "offmarket_bp": -100.0,
+      "adjustment_usd_100m_notional": -1453.8192309242886
+    },
+    {
+      "maturity": 1.0,
+      "offmarket_bp": 0.0,
+      "adjustment_usd_100m_notional": -0.14932091448732754
+    },
+    {
+      "maturity": 1.0,
+      "offmarket_bp": 100.0,
+      "adjustment_usd_100m_notional": 1453.520589095314
+    },
+    {
+      "maturity": 1.0,
+      "offmarket_bp": 200.0,
+      "adjustment_usd_100m_notional": 2907.190499104942
+    },
+    {
+      "maturity": 3.0,
+      "offmarket_bp": -200.0,
+      "adjustment_usd_100m_notional": -19361.816164534946
+    },
+    {
+      "maturity": 3.0,
+      "offmarket_bp": -100.0,
+      "adjustment_usd_100m_notional": -9681.418523458524
+    },
+    {
+      "maturity": 3.0,
+      "offmarket_bp": 0.0,
+      "adjustment_usd_100m_notional": -1.0208823812349332
+    },
+    {
+      "maturity": 3.0,
+      "offmarket_bp": 100.0,
+      "adjustment_usd_100m_notional": 9679.376758695707
+    },
+    {
+      "maturity": 3.0,
+      "offmarket_bp": 200.0,
+      "adjustment_usd_100m_notional": 19359.77439977213
+    },
+    {
+      "maturity": 5.0,
+      "offmarket_bp": -200.0,
+      "adjustment_usd_100m_notional": -48256.16656553566
+    },
+    {
+      "maturity": 5.0,
+      "offmarket_bp": -100.0,
+      "adjustment_usd_100m_notional": -24129.0340783705
+    },
+    {
+      "maturity": 5.0,
+      "offmarket_bp": 0.0,
+      "adjustment_usd_100m_notional": -1.9015912058537032
+    },
+    {
+      "maturity": 5.0,
+      "offmarket_bp": 100.0,
+      "adjustment_usd_100m_notional": 24125.23089595914
+    },
+    {
+      "maturity": 5.0,
+      "offmarket_bp": 200.0,
+      "adjustment_usd_100m_notional": 48252.36338312222
+    },
+    {
+      "maturity": 10.0,
+      "offmarket_bp": -200.0,
+      "adjustment_usd_100m_notional": -163002.77872829948
+    },
+    {
+      "maturity": 10.0,
+      "offmarket_bp": -100.0,
+      "adjustment_usd_100m_notional": -81503.3871812379
+    },
+    {
+      "maturity": 10.0,
+      "offmarket_bp": 0.0,
+      "adjustment_usd_100m_notional": -3.9956341808984606
+    },
+    {
+      "maturity": 10.0,
+      "offmarket_bp": 100.0,
+      "adjustment_usd_100m_notional": 81495.39591287696
+    },
+    {
+      "maturity": 10.0,
+      "offmarket_bp": 200.0,
+      "adjustment_usd_100m_notional": 162994.78745993855
+    }
+  ]
+}

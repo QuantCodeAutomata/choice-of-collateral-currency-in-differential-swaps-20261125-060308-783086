@@ -1,0 +1,80 @@
+{
+  "experiment": "exp_4_discrete_futures_hedging",
+  "n_paths": 10000,
+  "n_paths_paper": 10000,
+  "full_configuration": false,
+  "seed": 20261125,
+  "table4_hedge_comparison": [
+    {
+      "gamma": 0.0,
+      "collateral": "d",
+      "unhedged_rmse_bp": 67.6374031960418,
+      "sofr_only_rmse_bp": 0.020555991300541837,
+      "full_rmse_bp": 0.020555991300541837,
+      "sofr_only_variance_ratio": 9.23694217228166e-08,
+      "full_variance_ratio": 9.23694217228166e-08
+    },
+    {
+      "gamma": 0.0,
+      "collateral": "f",
+      "unhedged_rmse_bp": 67.80237362030506,
+      "sofr_only_rmse_bp": 0.02088881983348425,
+      "full_rmse_bp": 0.02088881983348425,
+      "sofr_only_variance_ratio": 9.492045105587722e-08,
+      "full_variance_ratio": 9.492045105587722e-08
+    },
+    {
+      "gamma": 1.0,
+      "collateral": "d",
+      "unhedged_rmse_bp": 75.88164685149776,
+      "sofr_only_rmse_bp": 55.580962652848406,
+      "full_rmse_bp": 0.26657102168567737,
+      "sofr_only_variance_ratio": 0.5366369830207438,
+      "full_variance_ratio": 1.2344678068248388e-05
+    },
+    {
+      "gamma": 1.0,
+      "collateral": "f",
+      "unhedged_rmse_bp": 76.06846993879513,
+      "sofr_only_rmse_bp": 55.71647033337587,
+      "full_rmse_bp": 0.2672406589041646,
+      "sofr_only_variance_ratio": 0.5366113130553092,
+      "full_variance_ratio": 1.2345910218599616e-05
+    }
+  ],
+  "figure3_rebalancing_frequency": [
+    {
+      "frequency": "daily",
+      "gamma": 0.0,
+      "sofr_only_rmse_bp": 0.02088881983348425
+    },
+    {
+      "frequency": "daily",
+      "gamma": 1.0,
+      "sofr_only_rmse_bp": 55.71647033337587,
+      "full_rmse_bp": 0.2672406589041646
+    },
+    {
+      "frequency": "weekly",
+      "gamma": 0.0,
+      "sofr_only_rmse_bp": 0.052812059314332395
+    },
+    {
+      "frequency": "weekly",
+      "gamma": 1.0,
+      "sofr_only_rmse_bp": 55.711268392133796,
+      "full_rmse_bp": 0.46390401294348926
+    },
+    {
+      "frequency": "monthly",
+      "gamma": 0.0,
+      "sofr_only_rmse_bp": 0.15270973853549763
+    },
+    {
+      "frequency": "monthly",
+      "gamma": 1.0,
+      "sofr_only_rmse_bp": 55.691417063636585,
+      "full_rmse_bp": 0.8749093718623663
+    }
+  ]
+}

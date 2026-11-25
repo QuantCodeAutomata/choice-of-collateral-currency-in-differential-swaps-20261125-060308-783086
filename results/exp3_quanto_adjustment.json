@@ -1,0 +1,184 @@
+{
+  "experiment": "exp_3_contractual_quanto_adjustment",
+  "maturity_years": 5.0,
+  "gamma": 1.0,
+  "sensitivity_grid": [
+    {
+      "rho_23": -0.5,
+      "sigma_bar": 0.05,
+      "quanto_adjustment_usd_collateral_bp": -0.758177761207325,
+      "quanto_adjustment_eur_collateral_bp": -0.7579401795798635,
+      "usd_eur_abs_diff_bp": 0.0002375816274615694
+    },
+    {
+      "rho_23": -0.35,
+      "sigma_bar": 0.05,
+      "quanto_adjustment_usd_collateral_bp": -0.5238984998233789,
+      "quanto_adjustment_eur_collateral_bp": -0.5237348658717472,
+      "usd_eur_abs_diff_bp": 0.00016363395163165873
+    },
+    {
+      "rho_23": -0.15,
+      "sigma_bar": 0.05,
+      "quanto_adjustment_usd_collateral_bp": -0.21153050378884541,
+      "quanto_adjustment_eur_collateral_bp": -0.21146546450821757,
+      "usd_eur_abs_diff_bp": 6.503928062784325e-05
+    },
+    {
+      "rho_23": 0.0,
+      "sigma_bar": 0.05,
+      "quanto_adjustment_usd_collateral_bp": 0.022742228923851304,
+      "quanto_adjustment_eur_collateral_bp": 0.022733323872779765,
+      "usd_eur_abs_diff_bp": 8.905051071539383e-06
+    },
+    {
+      "rho_23": 0.1,
+      "sigma_bar": 0.05,
+      "quanto_adjustment_usd_collateral_bp": 0.1789224963173741,
+      "quanto_adjustment_eur_collateral_bp": 0.17886429584175467,
+      "usd_eur_abs_diff_bp": 5.820047561944097e-05
+    },
+    {
+      "rho_23": 0.25,
+      "sigma_bar": 0.05,
+      "quanto_adjustment_usd_collateral_bp": 0.41319056580821356,
+      "quanto_adjustment_eur_collateral_bp": 0.4130584233900947,
+      "usd_eur_abs_diff_bp": 0.00013214241811887462
+    },
+    {
+      "rho_23": 0.38,
+      "sigma_bar": 0.05,
+      "quanto_adjustment_usd_collateral_bp": 0.6162206295188752,
+      "quanto_adjustment_eur_collateral_bp": 0.6160244052438174,
+      "usd_eur_abs_diff_bp": 0.00019622427505783246
+    },
+    {
+      "rho_23": 0.5,
+      "sigma_bar": 0.05,
+      "quanto_adjustment_usd_collateral_bp": 0.8036311307808158,
+      "quanto_adjustment_eur_collateral_bp": 0.803375754977742,
+      "usd_eur_abs_diff_bp": 0.0002553758030737763
+    },
+    {
+      "rho_23": -0.5,
+      "sigma_bar": 0.075,
+      "quanto_adjustment_usd_collateral_bp": -1.1486494147698243,
+      "quanto_adjustment_eur_collateral_bp": -1.1482885838305992,
+      "usd_eur_abs_diff_bp": 0.00036083093922512077
+    },
+    {
+      "rho_23": -0.35,
+      "sigma_bar": 0.075,
+      "quanto_adjustment_usd_collateral_bp": -0.7972245768040829,
+      "quanto_adjustment_eur_collateral_bp": -0.796974670424222,
+      "usd_eur_abs_diff_bp": 0.00024990637986088693
+    },
+    {
+      "rho_23": -0.15,
+      "sigma_bar": 0.075,
+      "quanto_adjustment_usd_collateral_bp": -0.32866791938476053,
+      "quanto_adjustment_eur_collateral_bp": -0.32856590740162894,
+      "usd_eur_abs_diff_bp": 0.0001020119831315891
+    },
+    {
+      "rho_23": 0.0,
+      "sigma_bar": 0.075,
+      "quanto_adjustment_usd_collateral_bp": 0.022742228923851304,
+      "quanto_adjustment_eur_collateral_bp": 0.022733323872779765,
+      "usd_eur_abs_diff_bp": 8.905051071539383e-06
+    },
+    {
+      "rho_23": 0.1,
+      "sigma_bar": 0.075,
+      "quanto_adjustment_usd_collateral_bp": 0.2570121636928657,
+      "quanto_adjustment_eur_collateral_bp": 0.25692931574391314,
+      "usd_eur_abs_diff_bp": 8.284794895258019e-05
+    },
+    {
+      "rho_23": 0.25,
+      "sigma_bar": 0.075,
+      "quanto_adjustment_usd_collateral_bp": 0.608411819773419,
+      "quanto_adjustment_eur_collateral_bp": 0.6082180601655816,
+      "usd_eur_abs_diff_bp": 0.0001937596078374071
+    },
+    {
+      "rho_23": 0.38,
+      "sigma_bar": 0.075,
+      "quanto_adjustment_usd_collateral_bp": 0.9129530962684664,
+      "quanto_adjustment_eur_collateral_bp": 0.912663215830653,
+      "usd_eur_abs_diff_bp": 0.00028988043781341677
+    },
+    {
+      "rho_23": 0.5,
+      "sigma_bar": 0.075,
+      "quanto_adjustment_usd_collateral_bp": 1.1940639239991362,
+      "quanto_adjustment_eur_collateral_bp": 1.1936853187915695,
+      "usd_eur_abs_diff_bp": 0.0003786052075667179
+    },
+    {
+      "rho_23": -0.5,
+      "sigma_bar": 0.1,
+      "quanto_adjustment_usd_collateral_bp": -1.5391288408722268,
+      "quanto_adjustment_eur_collateral_bp": -1.5386447566387988,
+      "usd_eur_abs_diff_bp": 0.0004840842334279394
+    },
+    {
+      "rho_23": -0.35,
+      "sigma_bar": 0.1,
+      "quanto_adjustment_usd_collateral_bp": -1.0705544622591905,
+      "quanto_adjustment_eur_collateral_bp": -1.0702182815007857,
+      "usd_eur_abs_diff_bp": 0.00033618075840480266
+    },
+    {
+      "rho_23": -0.15,
+      "sigma_bar": 0.1,
+      "quanto_adjustment_usd_collateral_bp": -0.44580603448085565,
+      "quanto_adjustment_eur_collateral_bp": -0.44566704943557744,
+      "usd_eur_abs_diff_bp": 0.000138985045278206
+    },
+    {
+      "rho_23": 0.0,
+      "sigma_bar": 0.1,
+      "quanto_adjustment_usd_collateral_bp": 0.022742228923851304,
+      "quanto_adjustment_eur_collateral_bp": 0.022733323872779765,
+      "usd_eur_abs_diff_bp": 8.905051071539383e-06
+    },
+    {
+      "rho_23": 0.1,
+      "sigma_bar": 0.1,
+      "quanto_adjustment_usd_collateral_bp": 0.3351015201892571,
+      "quanto_adjustment_eur_collateral_bp": 0.3349940249262884,
+      "usd_eur_abs_diff_bp": 0.00010749526296871537
+    },
+    {
+      "rho_23": 0.25,
+      "sigma_bar": 0.1,
+      "quanto_adjustment_usd_collateral_bp": 0.8036311307808158,
+      "quanto_adjustment_eur_collateral_bp": 0.803375754977742,
+      "usd_eur_abs_diff_bp": 0.0002553758030737763
+    },
+    {
+      "rho_23": 0.38,
+      "sigma_bar": 0.1,
+      "quanto_adjustment_usd_collateral_bp": 1.2096810740776232,
+      "quanto_adjustment_eur_collateral_bp": 1.2092975397768115,
+      "usd_eur_abs_diff_bp": 0.00038353430081161655
+    },
+    {
+      "rho_23": 0.5,
+      "sigma_bar": 0.1,
+      "quanto_adjustment_usd_collateral_bp": 1.584488945620341,
+      "quanto_adjustment_eur_collateral_bp": 1.5839871149901652,
+      "usd_eur_abs_diff_bp": 0.0005018306301758368
+    }
+  ],
+  "max_usd_eur_collateral_abs_diff_bp": 0.0005018306301758368,
+  "adjustment_at_rho23_zero_bp": 0.022742228923851304,
+  "gamma_linearity_check": {
+    "gamma_0.0": 0.0,
+    "gamma_0.5": 0.12850608184643286,
+    "gamma_1.0": 0.2570121636928657,
+    "gamma_1_times_0.5": 0.2570121636928657,
+    "matches_linearity": true
+  }
+}

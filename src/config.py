@@ -86,9 +86,10 @@ EXP4_GAMMAS = [0.0, 1.0]
 EXP4_COLLATERALS = ["d", "f"]
 EXP4_NOTIONAL = 1.0        # results reported in basis points of USD 1 notional
 EXP4_DT = 1.0 / 252.0       # daily Euler-Maruyama step (Section 6.4)
-# Full paper configuration: 10,000 common paths (Section 6.4). Reduced to fit
-# the time available for this replication; see results/RESULTS.md.
+# Full paper configuration: 10,000 common paths (Section 6.4). A full run with
+# the vectorised Euler-Maruyama grid completes in well under a minute, so the
+# paper's path count is used directly; EXP4_PATHS_RUN == EXP4_PATHS_PAPER.
 EXP4_PATHS_PAPER = 10_000
-EXP4_PATHS_RUN = 2_000
+EXP4_PATHS_RUN = 10_000
 EXP4_SEED = 20261125        # fixed random seed (not specified in the paper)
 EXP4_REBALANCE_FREQS = {"daily": 1, "weekly": 5, "monthly": 21}  # steps per rebalance
