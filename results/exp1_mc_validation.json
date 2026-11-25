@@ -1,0 +1,96 @@
+{
+  "experiment": "exp_1_mc_validation",
+  "n_paths": 250000,
+  "seed": 20261125,
+  "mc_vs_closed_form": [
+    {
+      "config": "single_T0.5_gamma0.0_d",
+      "structure": "single",
+      "T": 0.5,
+      "gamma": 0.0,
+      "collateral": "d",
+      "beta": 1.0,
+      "closed_form_price": 0.01818156063815135,
+      "mc_price": 0.018177138305255126,
+      "mc_std_error": 2.938898511459122e-06,
+      "mc_error": -4.422332896224929e-06,
+      "z_score": -1.5047586294598863,
+      "within_2_std": true,
+      "n_paths": 250000
+    },
+    {
+      "config": "single_T1.5_gamma1.0_f",
+      "structure": "single",
+      "T": 1.5,
+      "gamma": 1.0,
+      "collateral": "f",
+      "beta": 1.0,
+      "closed_form_price": 0.008318699879917513,
+      "mc_price": 0.008318918379256336,
+      "mc_std_error": 4.212074088929706e-06,
+      "mc_error": 2.1849933882350792e-07,
+      "z_score": 0.05187452409675655,
+      "within_2_std": true,
+      "n_paths": 250000
+    },
+    {
+      "config": "multi_T3.0_gamma0.0_d",
+      "structure": "multi",
+      "T": 3.0,
+      "gamma": 0.0,
+      "collateral": "d",
+      "beta": 1.0,
+      "closed_form_price": 0.1042375279781429,
+      "mc_price": 0.10423308859676643,
+      "mc_std_error": 1.1334908764801107e-05,
+      "mc_error": -4.439381376467044e-06,
+      "z_score": -0.3916556779224276,
+      "within_2_std": true,
+      "n_paths": 250000
+    },
+    {
+      "config": "multi_T3.0_gamma1.0_f",
+      "structure": "multi",
+      "T": 3.0,
+      "gamma": 1.0,
+      "collateral": "f",
+      "beta": 1.0,
+      "closed_form_price": 0.04945496806819083,
+      "mc_price": 0.04944496524158786,
+      "mc_std_error": 1.3334190646096723e-05,
+      "mc_error": -1.000282660296864e-05,
+      "z_score": -0.7501637608501373,
+      "within_2_std": true,
+      "n_paths": 250000
+    }
+  ],
+  "all_configs_within_2_std": true,
+  "separation_property_gamma0": {
+    "price_baseline_gamma0": 0.1042375279781429,
+    "price_perturbed_foreign_fx_gamma0": 0.1042375279781429,
+    "abs_difference": 0.0,
+    "matches": true
+  },
+  "equal_net_carry_identity": {
+    "price_collateral_d": 0.04949756908064351,
+    "price_collateral_f": 0.04949756908064351,
+    "abs_difference": 0.0,
+    "matches": true
+  },
+  "par_margin_invariance_to_collateral_and_beta": {
+    "beta_0.0": {
+      "kappa_star_usd_bp": 176.30476655924002,
+      "kappa_star_eur_bp": 176.30476655924002
+    },
+    "beta_0.5": {
+      "kappa_star_usd_bp": 176.30476655924002,
+      "kappa_star_eur_bp": 176.30476655924176
+    },
+    "beta_1.0": {
+      "kappa_star_usd_bp": 176.30476655924002,
+      "kappa_star_eur_bp": 176.3047665592397
+    },
+    "max_abs_deviation_bp": 1.7337242752546445e-12,
+    "invariant": true
+  }
+}
